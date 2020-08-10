@@ -10,6 +10,11 @@ public class SplashScreen : MonoBehaviour
         Invoke("LoadFirstLevel", 4f);
     }
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     private void LoadFirstLevel()
     {
         SceneManager.LoadScene(1);
