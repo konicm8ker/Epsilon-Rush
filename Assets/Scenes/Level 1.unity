@@ -326,7 +326,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 35
+  field of view: 45
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -424,10 +424,10 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 100
-  m_SplatMapDistance: 400
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
-  m_ShadowCastingMode: 0
+  m_ShadowCastingMode: 1
   m_DrawHeightmap: 1
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
@@ -596,11 +596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4197128655073178, guid: 33942a27e06a55e498652847d7d15f99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4197128655073178, guid: 33942a27e06a55e498652847d7d15f99, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4197128655073178, guid: 33942a27e06a55e498652847d7d15f99, type: 3}
       propertyPath: m_LocalRotation.x
@@ -665,10 +665,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ccdb67a5d3d234b8709bc2894b68d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: 20
-  ySpeed: 20
-  xRange: 10
-  yRange: 4.5
+  speed: 20
+  xRange: 12
+  yRange: 8
+  posPitchFactor: -3
+  posYawFactor: 3
+  controlPitchFactor: -20
+  controlRollFactor: -20
 --- !u!1 &1673785534
 GameObject:
   m_ObjectHideFlags: 0
