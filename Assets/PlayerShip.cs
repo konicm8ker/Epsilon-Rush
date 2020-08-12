@@ -6,10 +6,10 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerShip : MonoBehaviour
 {
     [Tooltip("In m/s^-1")][SerializeField] float speed = 18f;
-    [Tooltip("In m")][SerializeField] float xRange = 14f;
+    [Tooltip("In m")][SerializeField] float xRange = 14.5f;
     [Tooltip("In m")][SerializeField] float yRange = 8f;
     [SerializeField] float posPitchFactor = -3f;
-    [SerializeField] float posYawFactor = 2f;
+    [SerializeField] float posYawFactor = 3f;
     [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float controlRollFactor = -30f;
 
