@@ -4765,9 +4765,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 63e66e13f4a1c0b49b9f424fa7725054, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e2d551109edfbbe4e89dfe15b6fc417e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4980,6 +4980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathFX: {fileID: 464551998}
+  levelDelay: 2
 --- !u!114 &6524160920507915082
 MonoBehaviour:
   m_ObjectHideFlags: 0
