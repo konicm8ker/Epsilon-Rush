@@ -3,22 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class PlayerShip : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    [Tooltip("In m/s^-1")][SerializeField] float speed = 18f;
+
+    [Header("General")]
+    [Tooltip("In m/s^-1")][SerializeField] float controlSpeed = 18f;
     [Tooltip("In m")][SerializeField] float xRange = 14.5f;
     [Tooltip("In m")][SerializeField] float yRange = 8f;
+
+    [Header("Screen-position Based")]
     [SerializeField] float posPitchFactor = -3f;
     [SerializeField] float posYawFactor = 3f;
+
+    [Header("Control-throw Based")]
     [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float controlRollFactor = -30f;
 
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
     void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if(isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
+    }
+
+    void OnPlayerDeath() // String referenced
+    {
+        isControlEnabled = false;
     }
 
     private void ProcessTranslation()
@@ -26,10 +41,10 @@ public class PlayerShip : MonoBehaviour
 
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
-        Debug.Log("X Throw: " + xThrow + " | Y Throw: " + yThrow );
+        // Debug.Log("X Throw: " + xThrow + " | Y Throw: " + yThrow );
 
-        float xOffset = xThrow * speed * Time.deltaTime; // Gets current x offset per frame
-        float yOffset = yThrow * speed * Time.deltaTime; // Gets current y offset per frame
+        float xOffset = xThrow * controlSpeed * Time.deltaTime; // Gets current x offset per frame
+        float yOffset = yThrow * controlSpeed * Time.deltaTime; // Gets current y offset per frame
         float rawXPos = Mathf.Clamp(transform.localPosition.x + xOffset, -xRange, xRange); // Prevents going offscreen on x axis
         float rawYPos = Mathf.Clamp(transform.localPosition.y + yOffset, -yRange, yRange); // Prevents going offscreen on y axis
 
@@ -53,4 +68,5 @@ public class PlayerShip : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(pitch,yaw,roll);
     }
+
 }
