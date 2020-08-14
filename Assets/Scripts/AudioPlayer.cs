@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour
 {
+
     void Awake()
     {
         int numOfAudioPlayers = FindObjectsOfType<AudioPlayer>().Length;
@@ -16,4 +17,5 @@ public class AudioPlayer : MonoBehaviour
             DontDestroyOnLoad(this.gameObject);
         }
     }
+    
 }

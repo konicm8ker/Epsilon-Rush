@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameLoader : MonoBehaviour
 {
+    
     void Start()
     {
         Invoke("LoadFirstLevel", 4f);
@@ -14,4 +15,5 @@ public class GameLoader : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
 }
