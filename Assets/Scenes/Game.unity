@@ -200,6 +200,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 5246165522391422696, guid: 5089ca83841cac44f83e61c80ba338b9,
     type: 3}
   parent: {fileID: 2108256282}
+  scorePerHit: 12
 --- !u!1 &133218597
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +392,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b6cc144d2263c4c9e2640c30fafff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerHit: 12
 --- !u!1 &520112514
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +479,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 5246165522391422696, guid: 5089ca83841cac44f83e61c80ba338b9,
     type: 3}
   parent: {fileID: 2108256282}
+  scorePerHit: 12
 --- !u!4 &646310512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -940,6 +941,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 5246165522391422696, guid: 5089ca83841cac44f83e61c80ba338b9,
     type: 3}
   parent: {fileID: 2108256282}
+  scorePerHit: 100
 --- !u!1 &1465993546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1179,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 5246165522391422696, guid: 5089ca83841cac44f83e61c80ba338b9,
     type: 3}
   parent: {fileID: 2108256282}
+  scorePerHit: 12
 --- !u!1 &1667580899 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
@@ -1198,6 +1201,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 5246165522391422696, guid: 5089ca83841cac44f83e61c80ba338b9,
     type: 3}
   parent: {fileID: 2108256282}
+  scorePerHit: 12
 --- !u!4 &1667580902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649,
@@ -1351,6 +1355,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 5246165522391422696, guid: 5089ca83841cac44f83e61c80ba338b9,
     type: 3}
   parent: {fileID: 2108256282}
+  scorePerHit: 100
 --- !u!1 &1828013887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1413,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 5246165522391422696, guid: 5089ca83841cac44f83e61c80ba338b9,
     type: 3}
   parent: {fileID: 2108256282}
+  scorePerHit: 100
 --- !u!1001 &1968410921
 PrefabInstance:
   m_ObjectHideFlags: 0
