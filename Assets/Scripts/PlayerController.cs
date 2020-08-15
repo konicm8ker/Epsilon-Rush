@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("In m/s^-1")][SerializeField] float controlSpeed = 18f;
     [Tooltip("In m")][SerializeField] float xRange = 14.5f;
     [Tooltip("In m")][SerializeField] float yRange = 8f;
+    [SerializeField] GameObject[] guns = null;
 
     [Header("Screen-position Based")]
     [SerializeField] float posPitchFactor = -3f;
@@ -28,12 +30,14 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
     void OnPlayerDeath() // String referenced
     {
         isControlEnabled = false;
+        FiringStatus(false);
     }
 
     private void ProcessTranslation()
@@ -67,6 +71,28 @@ public class PlayerController : MonoBehaviour
         float roll = rollDueToThrow;
 
         transform.localRotation = Quaternion.Euler(pitch,yaw,roll);
+    }
+
+    private void ProcessFiring()
+    {
+        // fire input code here
+        if(CrossPlatformInputManager.GetButton("Fire1"))
+        {
+            FiringStatus(true);
+        }
+        else
+        {
+            FiringStatus(false);
+        }
+    }
+
+    private void FiringStatus(bool value)
+    {
+        foreach(GameObject gun in guns) // Prevents bullets that have been fired from suddenly disappearing
+        {
+            var emissionModule = gun.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = value;
+        }
     }
 
 }
