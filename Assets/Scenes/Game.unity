@@ -201,6 +201,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 2108256282}
   scorePerHit: 12
+  maxHits: 4
 --- !u!1 &133218597
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +493,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 2108256282}
   scorePerHit: 12
+  maxHits: 4
 --- !u!4 &646310512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4990607877152018, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -659,7 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 1349122167}
-  lookAheadForTargetOffset: 3.5
+  lookAheadForTargetOffset: 3
   lookAheadForTargetFactor: 0
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
@@ -954,6 +956,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 2108256282}
   scorePerHit: 100
+  maxHits: 14
 --- !u!1 &1465993546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1195,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 2108256282}
   scorePerHit: 12
+  maxHits: 4
 --- !u!1 &1667580899 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
@@ -1214,6 +1218,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 2108256282}
   scorePerHit: 12
+  maxHits: 4
 --- !u!4 &1667580902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649,
@@ -1368,6 +1373,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 2108256282}
   scorePerHit: 100
+  maxHits: 14
 --- !u!1 &1828013887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,6 +1432,7 @@ MonoBehaviour:
     type: 3}
   parent: {fileID: 2108256282}
   scorePerHit: 100
+  maxHits: 14
 --- !u!1001 &1968410921
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     void OnPlayerDeath() // String referenced
     {
         isControlEnabled = false;
-        FiringStatus(false);
+        FiringTrigger(false);
     }
 
     private void ProcessTranslation()
@@ -75,21 +75,22 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessFiring()
     {
-        // fire input code here
+        // Only fire when button pressed
         if(CrossPlatformInputManager.GetButton("Fire1"))
         {
-            FiringStatus(true);
+            FiringTrigger(true);
         }
         else
         {
-            FiringStatus(false);
+            FiringTrigger(false);
         }
     }
 
-    private void FiringStatus(bool value)
+    private void FiringTrigger(bool value)
     {
-        foreach(GameObject gun in guns) // Prevents bullets that have been fired from suddenly disappearing
+        foreach(GameObject gun in guns)
         {
+            // Prevents bullets that have been fired from suddenly disappearing
             var emissionModule = gun.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = value;
         }
