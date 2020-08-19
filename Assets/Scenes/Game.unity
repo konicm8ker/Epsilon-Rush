@@ -167,12 +167,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 746730854}
-  m_PathPosition: 130.3
+  m_PathPosition: 0
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
   m_YDamping: 0
-  m_ZDamping: 1
+  m_ZDamping: 0
   m_CameraUp: 1
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -272,18 +272,19 @@ PlayableDirector:
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 3540f883360cce344bca72689d820c15, type: 2}
   m_InitialState: 1
-  m_WrapMode: 2
+  m_WrapMode: 1
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 7560673955067649055, guid: 3540f883360cce344bca72689d820c15, type: 2}
     value: {fileID: 365177287}
-  - key: {fileID: -5124652309530699905, guid: 3540f883360cce344bca72689d820c15, type: 2}
-    value: {fileID: 746730856}
-  - key: {fileID: 7992562355583063609, guid: 3540f883360cce344bca72689d820c15, type: 2}
+  - key: {fileID: -1693006463106404737, guid: 3540f883360cce344bca72689d820c15, type: 2}
+    value: {fileID: 712026253}
+  - key: {fileID: -2828163139674004638, guid: 3540f883360cce344bca72689d820c15, type: 2}
     value: {fileID: 963194229}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - 027242992ae50f645a1362b0067a2a3d: {fileID: 712026251}
 --- !u!4 &365177289
 Transform:
   m_ObjectHideFlags: 0
@@ -417,6 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 712026252}
   - component: {fileID: 712026251}
+  - component: {fileID: 712026253}
   m_Layer: 0
   m_Name: VirtualCam
   m_TagString: Untagged
@@ -474,6 +476,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &712026253
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712026250}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &746730853
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,73 +584,61 @@ MonoBehaviour:
     roll: 0
   - position: {x: 100.91228, y: -16.117004, z: 61.551514}
     roll: 0
-  - position: {x: 98.7747, y: -23.200943, z: 96.54432}
+  - position: {x: 95.92753, y: -23.200943, z: 96.54432}
     roll: 0
-  - position: {x: 99.63327, y: -27.65599, z: 131.53712}
+  - position: {x: 91.97134, y: -27.65599, z: 131.53716}
     roll: 0
-  - position: {x: 97.5789, y: -26.373718, z: 166.52998}
+  - position: {x: 88.29946, y: -26.373718, z: 166.53003}
     roll: 0
-  - position: {x: 86.06906, y: -25.091446, z: 201.52289}
+  - position: {x: 85.34501, y: -25.091446, z: 201.52292}
     roll: -15
-  - position: {x: 77.41474, y: -19.452492, z: 241.47002}
+  - position: {x: 82.88436, y: -19.452492, z: 241.47006}
     roll: -30
-  - position: {x: 75.806984, y: -12.534042, z: 280.59204}
+  - position: {x: 83.85677, y: -7.590122, z: 301.09372}
     roll: -45
-  - position: {x: 80.51343, y: -4.562687, z: 318.99127}
-    roll: -45
-  - position: {x: 89.62669, y: 2.8500595, z: 353.97205}
-    roll: -45
-  - position: {x: 108.04771, y: 12.008583, z: 386.05786}
-    roll: -45
-  - position: {x: 140.2488, y: 25.143982, z: 412.5476}
+  - position: {x: 89.626686, y: 2.8500595, z: 348.05667}
     roll: -60
-  - position: {x: 173.56056, y: 30.230537, z: 426.54813}
+  - position: {x: 118.34975, y: 12.008583, z: 393.67862}
     roll: -60
-  - position: {x: 208.89372, y: 28.392082, z: 430.19565}
+  - position: {x: 169.91306, y: 22.137245, z: 400.85107}
     roll: -60
-  - position: {x: 244.42789, y: 20.13807, z: 420.2614}
-    roll: -60
-  - position: {x: 267.4268, y: 12.8186035, z: 389.1519}
+  - position: {x: 211.52293, y: 20.387444, z: 379.8518}
     roll: -45
-  - position: {x: 268.51715, y: 5.164192, z: 346.47757}
-    roll: -45
-  - position: {x: 257.42563, y: -8.956863, z: 304.29956}
-    roll: -45
-  - position: {x: 252.3759, y: -9.330971, z: 262.12167}
-    roll: -45
-  - position: {x: 268.80707, y: -0.5721741, z: 219.9438}
+  - position: {x: 242.3613, y: 12.684509, z: 356.6668}
     roll: -30
-  - position: {x: 300.2517, y: 8.186623, z: 177.76596}
+  - position: {x: 276.9279, y: 2.803566, z: 327.06848}
     roll: -15
-  - position: {x: 354.4633, y: 9.298996, z: 125.87777}
+  - position: {x: 309.37903, y: -3.7317734, z: 294.78857}
     roll: 0
-  - position: {x: 415.53802, y: 14.273735, z: 87.50516}
+  - position: {x: 342.5524, y: -5.589325, z: 259.57394}
     roll: 0
-  - position: {x: 476.61258, y: 13.900314, z: 42.068104}
+  - position: {x: 380.02728, y: -3.7177048, z: 214.04787}
     roll: 0
-  - position: {x: 512.19653, y: 3.433052, z: -24.38995}
+  - position: {x: 436.6307, y: 4.0105896, z: 141.92665}
     roll: 0
-  - position: {x: 501.83334, y: 6.0260315, z: -90.84803}
+  - position: {x: 476.61252, y: 11.563782, z: 58.409058}
     roll: 0
-  - position: {x: 468.414, y: 11.975731, z: -164.5329}
+  - position: {x: 501.83322, y: 12.149445, z: -67.538506}
     roll: 0
-  - position: {x: 396.3472, y: 22.928131, z: -229.64297}
+  - position: {x: 468.41397, y: 15.948631, z: -164.53291}
     roll: 0
-  - position: {x: 332.22742, y: 26.267525, z: -272.8079}
+  - position: {x: 400.3701, y: 22.928131, z: -229.64302}
     roll: 0
-  - position: {x: 261.37878, y: 18.453415, z: -303.25763}
+  - position: {x: 330.99954, y: 26.267525, z: -274.19022}
     roll: 0
-  - position: {x: 184.67778, y: 10.639305, z: -311.27255}
+  - position: {x: 261.37875, y: 18.453415, z: -302.84534}
+    roll: 0
+  - position: {x: 186.9747, y: 10.639305, z: -307.39343}
     roll: 0
   - position: {x: 127.21766, y: 2.8251953, z: -265.91705}
     roll: 0
   - position: {x: 87.48213, y: -9.526268, z: -200.15805}
     roll: 0
-  - position: {x: 61.9834, y: -14.542191, z: -158.11794}
+  - position: {x: 61.98339, y: -12.875168, z: -158.11794}
     roll: 0
-  - position: {x: 36.05302, y: -15.634895, z: -116.077835}
+  - position: {x: 36.053013, y: -8.575203, z: -116.07784}
     roll: 0
-  - position: {x: 10.122623, y: -5.122284, z: -64.99931}
+  - position: {x: 10.122619, y: -2.1406403, z: -64.99932}
     roll: 0
 --- !u!4 &746730855
 Transform:
@@ -741,8 +750,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.06267253, y: 0.7558359, z: 0.07314298, w: 0.64763755}
-  m_LocalPosition: {x: 315.5178, y: -11.558666, z: 546.9713}
+  m_LocalRotation: {x: -0.008933019, y: -0.46646625, z: -0.005537588, w: -0.14615335}
+  m_LocalPosition: {x: 165.83012, y: 38, z: 37.499992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9190415559051679412}
