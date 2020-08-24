@@ -145,6 +145,7 @@ MonoBehaviour:
   controlSpeed: 18
   xRange: 14.5
   yRange: 8
+  guns: []
   posPitchFactor: -3
   posYawFactor: 3
   controlPitchFactor: -20
