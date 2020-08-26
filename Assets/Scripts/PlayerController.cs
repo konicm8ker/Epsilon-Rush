@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessTranslation()
     {
-
         xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         // Debug.Log("X Throw: " + xThrow + " | Y Throw: " + yThrow );
