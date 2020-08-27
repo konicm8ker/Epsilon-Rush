@@ -21,8 +21,31 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float controlRollFactor = -30f;
 
+    [Header("Sound Effects")]
+    [SerializeField] AudioClip laserBlast = null;
+    AudioSource audioSource;
+
     float xThrow, yThrow;
     bool isControlEnabled = true;
+    bool playFiringSFX = false;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        StartCoroutine(AdjustFiringTime(0.1f));
+    }
+
+    IEnumerator AdjustFiringTime(float waitTime)
+    {
+        while(true)
+        {
+            if(playFiringSFX)
+            {
+                audioSource.PlayOneShot(laserBlast, 0.15f);
+            }
+            yield return new WaitForSeconds(waitTime);
+        }
+    }
 
     void Update()
     {
@@ -93,6 +116,7 @@ public class PlayerController : MonoBehaviour
             var emissionModule = gun.GetComponent<ParticleSystem>().emission;
             emissionModule.enabled = value;
         }
+        playFiringSFX = value;
     }
 
 }
