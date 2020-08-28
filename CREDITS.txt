@@ -1,3 +1,17 @@
-CREDITS:
+[Background Music]
 
-Lazer_Blast.wav (Daleonfire - Lazer2.wav | freesound.org)
+* "Light-Years_V001" by Eric Matyas
+  www.soundimage.org
+
+[Sound Effects]
+
+* "Recharge" by Dpoggioli
+  (Laser Gun Recharge) - www.freesound.org
+* "Retro Explosion" by MATRIXXX_
+  (Retro_Explosion_05) - www.freesound.org
+* "Warning" by Alxy
+  (missile lock on sound) - www.freesound.org
+
+[Voice Overs]
+
+* "Hologram Assistant" by Microsoft Zira TTS
