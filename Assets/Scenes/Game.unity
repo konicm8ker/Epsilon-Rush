@@ -14,12 +14,12 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  m_FogMode: 3
-  m_FogDensity: 0.01
-  m_LinearFogStart: 0
-  m_LinearFogEnd: 300
+  m_Fog: 1
+  m_FogColor: {r: 0.047058824, g: 0.047058824, b: 0.047058824, a: 1}
+  m_FogMode: 1
+  m_FogDensity: 0.002
+  m_LinearFogStart: 250
+  m_LinearFogEnd: 750
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
@@ -2775,7 +2775,7 @@ GameObject:
   - component: {fileID: 510138597}
   - component: {fileID: 510138599}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2795,10 +2795,10 @@ RectTransform:
   m_Father: {fileID: 1542248328}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -660.8694, y: 444.47797}
-  m_SizeDelta: {x: -1391.7385, y: -958.95593}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 299.1306, y: -276.02203}
+  m_SizeDelta: {x: 528.2615, y: 482.04407}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &510138597
 MonoBehaviour:
@@ -7000,7 +7000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1570153545
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7015,10 +7015,10 @@ RectTransform:
   m_Father: {fileID: 1542248328}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 673, y: -365}
-  m_SizeDelta: {x: -1820, y: -980}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -287, y: 175}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570153546
 MonoBehaviour:
@@ -8935,7 +8935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1929696201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8979,7 +8979,7 @@ RectTransform:
   m_GameObject: {fileID: 1929696200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1542248328}
   m_RootOrder: 2
@@ -10452,26 +10452,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Directional Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 1946623246945315558, guid: 6e92395812ce54f4389016e40982dc70,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.y
-      value: 6.4353e-41
-      objectReference: {fileID: 0}
-    - target: {fileID: 1946623246945315558, guid: 6e92395812ce54f4389016e40982dc70,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 1946623246945315558, guid: 6e92395812ce54f4389016e40982dc70,
-        type: 3}
-      propertyPath: m_Shadows.m_Type
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1946623246945315558, guid: 6e92395812ce54f4389016e40982dc70,
-        type: 3}
-      propertyPath: m_BoundingSphereOverride.w
-      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 1946623246945315559, guid: 6e92395812ce54f4389016e40982dc70,
         type: 3}
