@@ -35,6 +35,16 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(AdjustFiringTime(0.1f));
     }
 
+    void Update()
+    {
+        if(isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+            ProcessFiring();
+        }
+    }
+
     IEnumerator AdjustFiringTime(float waitTime)
     {
         while(true)
@@ -45,17 +55,7 @@ public class PlayerController : MonoBehaviour
             }
             yield return new WaitForSeconds(waitTime);
         }
-    }
-
-    void Update()
-    {
-        if(isControlEnabled)
-        {
-            ProcessTranslation();
-            ProcessRotation();
-            ProcessFiring();
-        }
-    }
+    } 
 
     void OnPlayerDeath() // String referenced
     {
