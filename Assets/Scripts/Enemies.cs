@@ -27,17 +27,58 @@ public class Enemies : MonoBehaviour
     {
         scoreBoard.ScoreHit(scorePerHit);
         maxHits--;
-        if(maxHits < 1)
+        if(maxHits == 0)
         {
             KillEnemy();
         }
+        Invoke("RestoreMaxHits", 25f);
         
+    }
+
+    private void RestoreMaxHits()
+    {
+        if(this.gameObject.tag == "Enemy 1")
+        {
+            this.scorePerHit = 12;
+            this.maxHits = 2;
+        }
+        else if(gameObject.tag == "Enemy 2")
+        {
+            this.scorePerHit = 100;
+            this.maxHits = 4;
+        }
+        else if(gameObject.tag == "Enemy 3")
+        {
+            this.scorePerHit = 512;
+            this.maxHits = 6;
+        }
+        else if(gameObject.tag == "Boss")
+        {
+            this.scorePerHit = 1048;
+            this.maxHits = 64;
+        }
     }
 
     private void KillEnemy()
     {
         GameObject fx = Instantiate(enemyDeathFX, transform.position, Quaternion.identity);
         fx.transform.parent = parent;
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        this.gameObject.transform.localScale = new Vector3(0,0,0);
+        Invoke("RestoreEnemyScale", 25f);
+    }
+
+    private void RestoreEnemyScale()
+    {
+        if(this.gameObject.tag == "Boss")
+        {
+            this.gameObject.transform.localScale = new Vector3(40,80,40);
+        }
+        else
+        {
+            this.gameObject.transform.localScale = new Vector3(40,40,40);
+        }
+        RestoreMaxHits();
+        
     }
 }

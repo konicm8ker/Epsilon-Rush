@@ -18,6 +18,7 @@ public class ScoreBoard : MonoBehaviour
     public void ScoreHit(int scoreIncrease)
     {
         score += scoreIncrease;
+        if(score > 99999999) { score = 99999999; } // Set max score
         scoreText.text = score.ToString();
     }
     

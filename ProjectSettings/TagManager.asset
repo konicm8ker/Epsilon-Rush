@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Boss
+  - Enemy 1
+  - Enemy 2
+  - Enemy 3
   layers:
   - Default
   - TransparentFX
